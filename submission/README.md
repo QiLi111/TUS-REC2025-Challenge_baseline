@@ -31,6 +31,7 @@
 > * Your model is expected to run on a single GPU, with GPU memory usage not exceeding 32GB when running docker.
 > * Participants are required to dockerize their trained network/algorithm/method and submit them via a file-sharing link (e.g., OneDrive, Dropbox) to the organizers via this <a href="https://forms.office.com/e/dj1g5TKyaj" target="_blank">form</a>.
 > * Participants are allowed to make multiple distinct submissions (but must ensure they are not merely simple variations in hyperparameter values), and the best result will be selected for competing. The number of submissions for each team is limited to 5 to preserve variations in hyperparameters.
+> * The test set in the TUS-REC2025 Challenge includes only the rotation scans, but you may use the datasets from the TUS-REC2024 Challenge as extra training data.
 
 ## Data structure
 We have provided validation data [here](https://doi.org/10.5281/zenodo.15699958), which has the same structure as the test data. A successful run on the validation set will ensure that the code will run without problems on the holdout test set. The data folder structure is as follows. Details can be found in the [zenodo page](https://doi.org/10.5281/zenodo.15699958). The validation set is different from the training set in that: 1) the image and transformation for each scan are stored separately in two folders; 2) the added file `dataset_keys.h5` contains the paths to all scans in the dataset.
